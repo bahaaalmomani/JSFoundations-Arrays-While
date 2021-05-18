@@ -9,7 +9,7 @@
  * isArrayLengthOdd([1, 2, 3, 4]) -> flase
  */
 function isArrayLengthOdd(numbers) {
-  if (numbers.lengh % 2 === 0) {
+  if (numbers.length % 2 === 0) {
     return false;
   } else {
     return true;
@@ -27,7 +27,7 @@ function isArrayLengthOdd(numbers) {
  * isArrayLengthEven([1, 2, 3, 4]) -> true
  */
 function isArrayLengthEven(numbers) {
-  if (numbers.lengh % 2 === 0) {
+  if (numbers.length % 2 === 0) {
     return true;
   } else {
     return false;
@@ -92,7 +92,11 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  * - Use string method .endsWith()
  */
 function youGottaCalmDown(shout) {
-  console.log(`shout`);
+  if (shout.endsWith("!")) {
+    return shout.slice(0, shout.indexOf("!") + 1);
+  } else {
+    return shout;
+  }
 }
 
 module.exports = {
