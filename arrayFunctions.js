@@ -44,7 +44,8 @@ function isArrayLengthEven(numbers) {
  */
 function addLailaToArray(instructors) {
   console.log(instructors);
-  instructors.push("laila");
+  instructors.push("Laila");
+  return instructors;
 }
 
 /**
@@ -70,8 +71,8 @@ function eliminateTeam(teams) {
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]) -> []
  */
 function secondHalfOfArrayIfItIsEven(fruits) {
-  if (fruits.lengh % 2 === 0) {
-    return fruits.slice(fruits.lengh / 2, fruits.lengh);
+  if (fruits.length % 2 === 0) {
+    return fruits.slice(fruits.length / 2, fruits.length);
   } else {
     return [];
   }
